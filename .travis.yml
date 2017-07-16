@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: ptozApZsgEsC8ojtgFITzvuBx0+GP7XathxisZDA8SIoa6inbdJQ9W2xY/dDrzxzNRcgcFAWAwad60clKIEm5zlCyUrdaWAPyiMWJ/y0KooGH1fTDtqm/OlI+i9AgPAE71+s0pesydUumX8s1ocaBscf6BfjXEELOXkg7Sp3iJPB2/SSKdb3hDzWLU1GNAohnIuTZliUuhWwJAu0ZfiMUDZBT5BlFeYDTEnCtJ2R66MbZGwGUB8HoWuiOkYZazE4Uxe60rjv7JeYzmGgI+sNkvKSTCLwoV57oiv7DDR2F6RMpbNSzLOaUQsT8E5RHRTn+zVpW5pLaF5ljXmVoHywFl3go3Hv88se4XkaLTLsvoj4/egcAJtygwq/C1EXBXmMF+oUfbBF+Zxbk2Qih1K3BH8K7RBwwfcedAykpZwT/P/4mwn1/wvMxNSfJAdnf4fW5P+fFn99D4GekfutOTj26Jlsdgmq26wWgN6/87Mm+rfsEel1h2VHcRC+9nYwi2GwQ5sOhWkjZ/ezYM6nZcc791dkyiRNv+svVocvikJBMNXickD93HMi3GH+E2IepeUn3MSOD6Z7TUZaUkXJo17LwU1ntU3ems9UUrYxKLWcs7KOxHz9x/55/PnvtvqlFxRi1QPIZjG5grKHefvHR1MT66V7kK4PNc5oHKTW+0VMhDw=
+  app: lit-sands-19115
+  on:
+    repo: seanphunt18/back-end-capstone
