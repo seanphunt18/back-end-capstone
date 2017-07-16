@@ -4,7 +4,7 @@
   "description": "server-side capstone project",
   "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/*"
   },
   "author": "",
   "license": "ISC",
