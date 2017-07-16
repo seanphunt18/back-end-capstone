@@ -7,3 +7,4 @@ deploy:
   app: lit-sands-19115
   on:
     repo: seanphunt18/back-end-capstone
+ 
