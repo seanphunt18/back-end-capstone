@@ -50,17 +50,27 @@ function getDisplayEntries(callbackFn) {
 	setTimeout(function(){ callbackFn(MOCK_ENTRIES)}, 100);
 }
 
+var filterAmount;
+
 function displayEntries(data) {
 	for (index in data.entries) {
-		$('.results').append(
-			'<div class="result-container"><div class="result-price"><h1>' + data.entries[index].amount + '</h1></div><div class="result-info"><h3>' + data.entries[index].charity + '</h3><p>Service provided: ' + data.entries[index].type + '</p><div class="donate"><a href="' + data.entries[index].url + '" target="_blank">Donate</a></div></div></div>'
-		);
+		if (data.entries[index].amount === filterAmount) {
+			$('.results').append(
+				'<div class="result-container"><div class="result-price"><h1>' + data.entries[index].amount + '</h1></div><div class="result-info"><h3>' + data.entries[index].charity + '</h3><p>Service provided: ' + data.entries[index].type + '</p><div class="donate"><a href="' + data.entries[index].url + '" target="_blank">Donate</a></div></div></div>'
+			);
+		} 
+	}
+
+	if ($('.results').html() === '<div class="results"></div>') {
+		$('.results').append('<h3 style="text-align: center; color: white;>No results</h3>'); 
 	}
 };
 
 function watchFilter() {
-	$('.js-form').submit(function(e) {
+	$('.filter-box').on("click", function(e) {
 		e.preventDefault();
+		$('.results').empty();
+		filterAmount = $(this).text();
 		getDisplayEntries(displayEntries);
 	});
 }
