@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const entrySchema = mongoose.Schema({
   charity: {type: String, required: true},
-  amount: {type: String, required: true},,
-  type: {type: String, required: true},,
-  url: {type: String, required: true},,
+  amount: {type: String, required: true},
+  type: {type: String, required: true},
+  url: {type: String, required: true},
 });
 
 entrySchema.methods.apiRepr = function() {
