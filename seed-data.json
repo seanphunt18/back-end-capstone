@@ -1,0 +1,36 @@
+{
+	"charity": "UNICEF",
+	"amount": "$5",
+	"type": "clothing",
+	"url": "#"
+}
+{
+	"charity": "Meals on Wheels",
+	"amount": "$10",
+	"type": "food",
+	"url": "#"
+}
+{
+	"charity": "Salvation Army",
+	"amount": "$15",
+	"type": "shelter",
+	"url": "#"
+}
+{
+	"charity": "charity:water",
+	"amount": "$20",
+	"type": "water",
+	"url": "#"
+}
+{
+	"charity": "United Way",
+	"amount": "$25",
+	"type": "education",
+	"url": "#"
+}
+{
+	"charity": "Save the Children",
+	"amount": "$30",
+	"type": "medical",
+	"url": "#"
+}
