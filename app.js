@@ -1,50 +1,50 @@
-var MOCK_ENTRIES = {
+// var MOCK_ENTRIES = {
 
-	"entries": [
-		{
-			"id": "111111",
-			"charity": "UNICEF",
-			"amount": "$5",
-			"type": "clothing",
-			"url": "http://google.com"
-		},
-		{
-			"id": "222222",
-			"charity": "UNICEF",
-			"amount": "$10",
-			"type": "food",
-			"url": "#"
-		},
-		{
-			"id": "333333",
-			"charity": "UNICEF",
-			"amount": "$15",
-			"type": "service",
-			"url": "#"
-		},
-		{
-			"id": "444444",
-			"charity": "UNICEF",
-			"amount": "$20",
-			"type": "infrastructure",
-			"url": "#"
-		},
-		{
-			"id": "555555",
-			"charity": "UNICEF",
-			"amount": "$25",
-			"type": "education",
-			"url": "#"
-		},
-		{
-			"id": "666666",
-			"charity": "UNICEF",
-			"amount": "$30",
-			"type": "medical",
-			"url": "#"
-		},
-	]
-};
+// 	"entries": [
+// 		{
+// 			"id": "111111",
+// 			"charity": "UNICEF",
+// 			"amount": "$5",
+// 			"type": "clothing",
+// 			"url": "http://google.com"
+// 		},
+// 		{
+// 			"id": "222222",
+// 			"charity": "UNICEF",
+// 			"amount": "$10",
+// 			"type": "food",
+// 			"url": "#"
+// 		},
+// 		{
+// 			"id": "333333",
+// 			"charity": "UNICEF",
+// 			"amount": "$15",
+// 			"type": "service",
+// 			"url": "#"
+// 		},
+// 		{
+// 			"id": "444444",
+// 			"charity": "UNICEF",
+// 			"amount": "$20",
+// 			"type": "infrastructure",
+// 			"url": "#"
+// 		},
+// 		{
+// 			"id": "555555",
+// 			"charity": "UNICEF",
+// 			"amount": "$25",
+// 			"type": "education",
+// 			"url": "#"
+// 		},
+// 		{
+// 			"id": "666666",
+// 			"charity": "UNICEF",
+// 			"amount": "$30",
+// 			"type": "medical",
+// 			"url": "#"
+// 		},
+// 	]
+// };
 
 function getDisplayEntries(callbackFn) {
 	setTimeout(function(){ callbackFn(MOCK_ENTRIES)}, 100);
