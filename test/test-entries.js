@@ -24,7 +24,7 @@ function seedEntryData() {
 function generateEntryData() {
   return {
     charity: faker.company.companyName(),
-    amount: faker.random.number(),
+    amount: faker.commerce.price(),
     type: faker.lorem.words(),
     url: faker.internet.domainName()
   }
@@ -100,7 +100,7 @@ describe('Entries API resource', function() {
               'id', 'charity', 'amount', 'type', 'url');
           });
           resEntry = res.body.entries[0];
-          return entry.findById(resEntry.id);
+          return Entry.findById(resEntry.id);
         })
         .then(function(entry) {
 
