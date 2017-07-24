@@ -35,6 +35,18 @@ function tearDownDb() {
     return mongoose.connection.dropDatabase();
 }
 
+describe('index page', function() {
+  it('exists', function(done) {
+    chai.request(app)
+      .get('/')
+      .end(function(err, res) {
+        res.should.have.status(200);
+        res.should.be.html;
+        done();
+    });
+  });
+});
+
 describe('Entries API resource', function() {
 
   before(function() {
