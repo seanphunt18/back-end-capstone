@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
 
 app.get('/entries', (req, res) => {
   Entry

@@ -25,7 +25,7 @@ function generateEntryData() {
   return {
     charity: faker.company.companyName(),
     amount: faker.random.number(),
-    type: faker.random.bs_noun(),
+    type: faker.lorem.words(),
     url: faker.internet.domainName()
   }
 }
