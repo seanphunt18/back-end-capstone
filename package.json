@@ -4,6 +4,7 @@
   "description": "server-side capstone project",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha test/*"
   },
   "author": "",

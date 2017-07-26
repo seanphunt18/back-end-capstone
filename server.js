@@ -11,11 +11,17 @@ const app = express();
 app.use(morgan('common'));
 app.use(bodyParser.json());
 
+app.use(express.static('public'));
+
 mongoose.Promise = global.Promise;
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
+
+// app.get("/:fileName", (req, res) => {
+//   res.sendFile(__dirname + '/' + req.params.fileName);
+// });
 
 app.get('/entries', (req, res) => {
   Entry
